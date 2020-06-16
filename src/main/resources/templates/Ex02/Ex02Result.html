@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http:www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>足し算結果画面</h1>
+<span th:text="${session.firstNum}"></span>
++
+<span th:text="${session.secondNum}"></span>
+=
+<span th:text="${session.answer}"></span><br>
+<a th:href="@{/calc/toNect}">次のページ</a>
+</body>
+</html>
